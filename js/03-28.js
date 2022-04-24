@@ -1,7 +1,11 @@
 let student = [{nome:"ALEXANDRE LEASTRO LEMES GONZAGA", dt_nascimento:"1980-06-24"},{nome:"ANA JULIA DA SILVA FELICIANO", dt_nascimento:"1984-05-04"},{nome:"ANDERSON GABRYEL FREIRE BARBOSA", dt_nascimento:"1973-11-16"},{nome:"ANDRÉ ALBUQUERQUE GONÇALVES", dt_nascimento:"1978-06-08"},{nome:"ANGELO DE SOUZA MOREIRA", dt_nascimento:"2005-11-30"},{nome:"ARYNA NOÊMIA MEIRELES DE SOUSA", dt_nascimento:"1976-06-16"},{nome:"BEATRIZ HELENA ULIAN COÊLHO", dt_nascimento:"1981-02-05"},{nome:"CAMILA DANTAS DE MELO", dt_nascimento:"1999-04-18"},{nome:"DANIELSON MACIEL DA COSTA", dt_nascimento:"2000-10-21"},{nome:"DANILO DE SOUZA BEZERRA", dt_nascimento:"1987-11-29"},{nome:"DAYANA DA SILVA CORREIA", dt_nascimento:"1973-06-16"},{nome:"DIOGO HENRIQUE VIEIRA LEITE", dt_nascimento:"2016-08-29"},{nome:"EDVANDO JUNYOR SALES DE OLIVEIRA", dt_nascimento:"1982-09-07"},{nome:"FABRICIO ARAUJO DA SILVA", dt_nascimento:"1972-05-17"},{nome:"FELIPE SILVA DE ARAUJO", dt_nascimento:"2017-09-15"},{nome:"FREDERICO LUIZ COSTA DE FARIA", dt_nascimento:"2001-07-21"},{nome:"GERMANIR LEAL SANTOS", dt_nascimento:"2019-01-15"},{nome:"JORGEAN DO BOMFIM PAULINO", dt_nascimento:"2004-10-17"},{nome:"JOSÉ PEREIRA CAETANO", dt_nascimento:"2006-04-04"},{nome:"KACIO DE SOUSA MENESES", dt_nascimento:"1978-06-12"},{nome:"LEANDRO ALMEIDA DA SILVA", dt_nascimento:"2003-07-27"},{nome:"LUCAS LUAN SANTOS ARAUJO", dt_nascimento:"1981-05-05"},{nome:"LUCAS PEREIRA SALMITO", dt_nascimento:"1975-02-07"},{nome:"LUCAS SILVA PIEDADE", dt_nascimento:"2012-02-14"},{nome:"MARCIO AQUILLES MONTELES SILVA", dt_nascimento:"1978-10-29"},{nome:"MARCUS VINICIUS FREITA SILVA", dt_nascimento:"1980-01-28"},{nome:"MATHEUS FELÍCIO LIMA", dt_nascimento:"1989-04-16"},{nome:"PAULO DA SILVA BARBOSA", dt_nascimento:"1981-04-02"},{nome:"RAFAELLA BEATRIZ GUIMARÃES CARDOS", dt_nascimento:"2016-05-07"},{nome:"RODOLFO RODRIGUES FRANCISCO", dt_nascimento:"2009-06-17"},{nome:"SAMUEL RAMOS QUITÂNIA", dt_nascimento:"1977-10-25"},{nome:"SUYANNE SARA MIRANDA SILVA", dt_nascimento:"1977-08-30"},{nome:"SUZANNY FREITA SILVA", dt_nascimento:"2004-01-23"},{nome:"THAMIRES DE JESUS DOS SANTOS", dt_nascimento:"2005-09-12"},{nome:"VANESSA GONÇALVES DE MOURA", dt_nascimento:"1983-10-03"},{nome:"WELLINGTON OLIVEIRA MACHADO", dt_nascimento:"2002-07-17"},{nome:"WENDELL BARESI SANTOS DE OLIVEIRA", dt_nascimento:"1986-07-13"}];
 let x = 0;
 
- while( x < student.length ) {
-  console.log( student[x][x].nome + "-----" + student[x][x].dt_nascimento );
-  x++;
+function loadPage(){
+  let txtTable = "";
+  for( let x in student ) {
+    txtTable += "<tr><td>"+student[x].nome+"</td></tr>";
+  }
+ console.log( txtTable)
+ const table = document.getElementById("tbCorpo").innerHTML = txtTable;
 }
