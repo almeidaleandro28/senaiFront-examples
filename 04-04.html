@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>example day 04-04</title>
+</head>
+<body>
+  <!-- <button id="btn" type="submit" onclick="loadRegions()">load</button>  -->
+  <form class="form" action="">
+
+    <div class="field">
+      <label for="regiao">regiao</label>
+      <div class="select is-rounded is-medium">
+        <select name="sel_regiao" id="sel_regiao" onchange="loadUF(this.value)">
+          <option value=""></option>
+        </select>
+      </div>
+
+      <label for="sel_uf">uf</label>
+      <div class="select is-rounded is-medium">
+        <select name="sel_uf" id="sel_uf" onchange="loaCounty(this.value)">
+          <option value=""></option>
+        </select>
+      </div>
+
+      <label for="sel_mun">municipio</label>
+      <div class="select is-rounded is-medium">
+        <select name="sel_mun" id="sel_mun">
+          <option value=""></option>
+        </select>
+      </div>
+
+    </div>
+
+  </form>
+  
+<script src="./js/04-04.js"></script>
+</body>
+</html>
